@@ -6,14 +6,15 @@ By default a node server listening on port 4000 with the command `npm run expres
 
 ## Supported tags (corresponds to phalcon version)
 
-* 8, 8.10, latest
+* 8, 8.11, latest
+* 8.10
 * 8.9
 
 ## Configuration
 
 ### Exposed ports  
 
-* 80
+* 4000
 
 ### Working Dir
 
