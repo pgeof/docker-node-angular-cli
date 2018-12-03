@@ -1,4 +1,4 @@
-FROM node:10.10
+FROM node:10.14
 
 RUN chown -R node $(npm config get prefix)/lib/node_modules && \
     chown -R node $(npm config get prefix)/bin && \

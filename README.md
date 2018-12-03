@@ -4,11 +4,12 @@ Docker image based on [Node](https://store.docker.com/images/node) that embeds [
 
 By default a node server listening on port 4000 with the command `npm run express`
 
-## Supported tags (corresponds to phalcon version)
+## Supported tags (corresponds to [node](https://store.docker.com/images/node) version)
 
+* 10.14
 * 10.10
-* 8.12, 8, latest
-* 8.11
+* 8.14, 8, latest
+* 8.12
 
 ## Configuration
 
