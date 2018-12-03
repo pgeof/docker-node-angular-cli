@@ -1,4 +1,4 @@
-FROM node:10.14
+FROM node:8.14
 
 RUN chown -R node $(npm config get prefix)/lib/node_modules && \
     chown -R node $(npm config get prefix)/bin && \
@@ -10,10 +10,6 @@ USER node
 # installing angular-cli as a global dependency
 RUN npm install -g @angular/cli && npm cache clean --force && rm -rf ~/.npm
 
-COPY docker-entrypoint.sh /usr/local/bin/
-
 WORKDIR /home/node/app
 
-EXPOSE 4000
-
-ENTRYPOINT docker-entrypoint.sh
+CMD [ "ng" ]
