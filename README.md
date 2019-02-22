@@ -6,8 +6,9 @@ The default command is `ng` alias the angular-cli command line tool.
 
 ## Supported tags (corresponds to [node](https://store.docker.com/images/node) version)
 
-* 10.14
-* 8.14, 8, latest
+* 11.10, 11
+* 10.15, 10, latest
+* 8.15, 8
 
 ## Configuration
 
