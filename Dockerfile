@@ -1,15 +1,9 @@
-FROM node:10.15
+FROM node:10
 
-RUN chown -R node $(npm config get prefix)/lib/node_modules && \
-    chown -R node $(npm config get prefix)/bin && \
-    chown -R node $(npm config get prefix)/share
+ARG ANGULAR_CLI_VERSION=7.3.9
 
-# RUN mkdir -p $(npm config get prefix)/node_modules
-
-USER node
 # installing angular-cli as a global dependency
-RUN npm install -g @angular/cli && npm cache clean --force && rm -rf ~/.npm
+RUN npm install -g @angular/cli@$ANGULAR_CLI_VERSION && npm cache clean --force && rm -rf ~/.npm
 
 WORKDIR /home/node/app
-
-CMD [ "ng" ]
+USER node
